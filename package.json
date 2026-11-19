@@ -1,0 +1,38 @@
+{
+  "name": "am-soul",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "给 DSH 里的 AI 加一副身体、一段人生、一点自己的事。会饿会累会病，心情八种，会老会死。",
+  "main": "src/node.js",
+  "exports": {
+    ".": "./src/node.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src",
+    "data/question-bank.json",
+    "README.md",
+    "LICENSE",
+    "cordis.patch.yml"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "ai-companion",
+    "emotion",
+    "character",
+    "soul",
+    "life-simulation"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AMIAN/am-soul"
+  }
+}
